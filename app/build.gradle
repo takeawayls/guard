@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 16
+    buildToolsVersion "28.0.2"
+
+    defaultConfig {
+        applicationId "cn.itcast.mobliesafe"
+        minSdkVersion 15
+        targetSdkVersion 16
+
+        testApplicationId "cn.itcast.mobliesafe"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile files('libs/RootTools.jar')
+    compile files('libs/xUtils-2.5.5.jar')
+}

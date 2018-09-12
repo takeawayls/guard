@@ -1,0 +1,64 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- 楂樺閮藉寘瑁瑰唴瀹� -->
+    <style name="wrapcontent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 鑷畾涔夊璇濇鏍峰紡 -->
+    <style name="dialog_custom" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!-- TextView 16sp鏍峰紡 -->
+    <style name="textview16sp" parent="wrapcontent">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- TextView 14sp鏍峰紡 -->
+    <style name="textview12sp" parent="wrapcontent">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!-- TextView 14sp鏍峰紡 -->
+    <style name="textview14sp" parent="wrapcontent">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- 瀹藉害涓�0dp,楂樺害涓哄寘瑁瑰唴瀹癸紝鏉冮噸涓�1 -->
+    <style name="zero_widthwrapcontent">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 榛勮壊14sp,鍥剧墖闂磋窛涓�5dp鐨則extview -->
+    <style name="tvyellow14sp" parent="zero_widthwrapcontent">
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/bright_yellow</item>
+    </style>
+
+</resources>
